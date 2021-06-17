@@ -70,7 +70,9 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1.length === str2.length;
+  return str1.length === str2.length; {
+      }
+      return false;
 }
 
 
@@ -147,13 +149,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var resto = num % 1;
-  var entero = num - resto;
-  if (resto >= 0.5) {
-    return entero + 1;
-  } else {
-    return entero;
-  }
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
@@ -243,12 +239,12 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.length > 1){
-    return "Dato incorrecto"
+    return "Dato incorrecto";
   }
   if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
-    return "Es vocal"
+    return "Es vocal";
   }
-
+return false;
 }
 
 
