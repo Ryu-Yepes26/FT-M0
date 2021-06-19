@@ -151,7 +151,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if (numero !== Math.floor(numero)){
+  if (numero === Math.floor(numero)){
     return false;
   }
   return true;
@@ -230,7 +230,12 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-
+if (valor === true){
+  return "Soy verdadero"
+}
+else if (valor === false) {
+  return "Soy falso"
+}
 }
 
 function tieneTresDigitos(numero){
@@ -250,6 +255,13 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var resultado = numero; //5
+  var i = 0;
+  do {
+    resultado = resultado + 5;
+    i++
+  } while (i < 8)
+  return resultado;
 }
 
 
